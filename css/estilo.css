@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* fonte (se necessitar) */
+
+* {
+	margin: 0px;
+}
+
+body {
+	background-color: white;
+}
+
+
+/* ### Pagina Inicial ### */
+
+section#paginaInicial {
+	width: 100%;
+	height: 600px;
+	background-color: green;
+}
+
+
+/* #### Barra de navegacao #### */
+
+header {
+	background-color: rgba(255, 255, 255, 1);
+	color: pink;
+	font-size: 13pt;
+	width: 100%;
+	height: 80px;
+	box-sizing: border-box;
+	position: fixed;
+	/*display: flex;*/
+	top: 0px;
+	padding: 30px;
+}
+
+header nav ol {
+	list-style: none;
+	/*
+	border: 1px solid blue;
+	position: absolute;
+	top: 20px;
+	left: 850px;
+	*/
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+header nav ol li {
+	/*
+	display: inline-block;
+	border: 1px solid red;
+	*/
+	margin-right: 40px;
+	
+}
+
+header nav ol li#item {
+	flex-grow: 1;
+	padding: 0px;
+}
+
+header nav ol li#item img {
+	width: 150px;
+	height: 150px;
+}
+
+header nav ol li a {
+	color: rgba(255, 20, 147, 0.8);
+	text-decoration: none;
+}
+
+header nav ol li a:hover {
+	color: rgba(255, 69, 0, 0.8);
+}
+
+header nav ol li img {
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+	margin-right: -20px;
+}
+
+
+/* #### Cabecalho #### */
+
+section {
+	background: white;
+	width: 100%;
+}
+
+
+/* ---- slider ---- */
+section#slider {
+	width: 100%;
+	height: 550px;
+	margin-top: 80px;
+	background-size: 1400px 550px;
+}
+
+section#slider input#btn1 {
+	color:white;
+	font:bold 30pt Verdana;
+	background-color:transparent;
+	border:0px;
+	position: absolute;
+	top:275px;
+	left: 15px;
+	height: 50px;
+	width: 50px;
+}
+
+section#slider input#btn2 {
+	color:white;
+	font:bold 30pt Verdana;
+	background-color:transparent;
+	border:0px;
+	position: absolute;
+	top:275px;
+	right:15px;
+	height: 50px;
+	width: 50px;
+}
+
+
+/* ---- cabecalho ---- */
+div#aulas section#cabecalho {
+	width: 100%;
+	height: 550px;
+	margin-top: 60px;
+	background: url(../imagens/aulas.jpg);
+	background-size: 1400px 550px;
+}
+
+div#aulas section#cabecalho section#texto_cabecalho {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	width: 400px;
+	height: 200px;
+
+
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+div#plataformas section#cabecalho {
+	width: 100%;
+	height: 550px;
+	margin-top: 60px;
+	background: url(../imagens/plataformas.jpg);
+	background-size: 1400px 550px;
+}
+
+div#eventos section#cabecalho {
+	width: 100%;
+	height: 550px;
+	margin-top: 60px;
+	background: url(../imagens/eventos.jpg);
+	background-size: 1400px 550px;
+}
+
+
+
+
+/* ### Conteudo ### */
+section#paginaConteudo {
+	width: 100%;
+	height: 600px;
+	box-sizing: border-box;
+	padding: 0px 80px;
+	background-color: rgb(220,220,220);
+}
+
+section#paginaConteudo div#conteudo {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+
+/* ---- aulas ---- */
+section#aulas {
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 50px;
+	color: black;
+	background-color: white;
+}
+
+section#aulas div.imagem {
+	margin-top: 30px;
+	margin-left: -70px;
+}
+
+section#aulas div.imagem img {
+	width: 250px;
+	height: 250px;
+}
+
+section#aulas div.texto {
+	margin-top: 140px;
+	padding-left: 20px;
+}
+
+section#aulas div.texto p {
+	color: rgba(255, 20, 147, 0.8);
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+section#aulasPrincipal {
+	width: 100%;
+	height: 700px;
+	box-sizing: border-box;
+	padding: 60px;
+	background-color: white;
+}
+
+section#paginaConteudo div.aulasConteudo {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 40px 25px;
+	background-color: white;
+}
+
+section#paginaConteudo div.aulasConteudo div img {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+}
+
+
+/* ---- plataformas ---- */
+section#plataformas {
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 50px;
+	padding-top: 80px;
+	/* background: linear-gradient(to top ,rgba(135,206,235), white); */
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+section#plataformas div img {
+	width: 150px;
+	height: 150px;
+	 /* border-radius: 75px; */
+}
+
+section#plataformas div p {
+	padding: 10px;
+	text-align: center;
+}
+
+section#paginaConteudo div.plataformasConteudo {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 40px 25px;
+	background-color: white;
+}
+
+section#paginaConteudo div.plataformasConteudo div {
+	display: flex;
+	justify-content: space-around;
+	padding: 0px 15px;
+
+}
+
+section#paginaConteudo div.plataformasConteudo div img {
+	width: 75%;
+	height: 100%;
+}
+
+section#paginaConteudo div.plataformasConteudo div img:hover {
+	filter: blur(2px);
+}
+
+
+/* ---- eventos ---- */
+section#eventos {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	background-image: url('../imagens/roda.jpg');
+	background-size: 1400px 400px;
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+section#eventos p.texto {
+	color: white;
+}
+
+
+/* #### Rodapé #### */
+
+footer {
+	background-color: rgba(255, 20, 147, 0.7);
+	width: 100%;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+footer ol {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	height: 100%;
+	/* border: 1px solid red; */
+}
+
+/* 
+footer ol#logo_centro {
+	display: flex;
+	vertical-align: center;
+}
+*/
+
+footer ol li {
+	margin-right: 40px;
+}
+
+footer ol li#rodape_logo img {
+	width: 100px;
+	height: 100px;
+}
+
+footer ol li h3 {
+	color: #363636;
+}
+
+footer ol li ol.itens {
+	list-style: none;
+	display: block;
+}
+
+footer ol li ol.itens li {
+	margin: 20px 0px;
+}
+
+footer ol li ol.itens li a {
+	color: white;
+	text-decoration: none;
+}
+
+footer ol li ol.itens li a:hover {
+	color: rgba(255, 69, 0, 0.8);
+}
+
+footer ol li#rodape_logo {
+	margin-top: 100px;
+}
+
+footer ol li#rodape_social {
+	margin-top: 180px;
+}
+
+footer ol li#rodape_social ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer ol li#rodape_social ul li {
+	margin-right: 20px;
+}
+
+footer ol li#rodape_social ul li a img {
+	width: 50px;
+	height: 50px;
+}
+
+
+/* ### Videos ### */
+
+section#paginaInicial video#videoPaginaInicial {
+	min-width: 500px;
+	min-height: 700px;
+}

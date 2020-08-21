@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+}
+
+.paginaPrincipal {
+    width: 100%;
+}
+
+.videoPaginaInicial video {
+    width: 100%;
+}
+
+#conteudo {
+	position: absolute;
+	border-radius: 10px;
+	top: 100px;
+	left: 535px;
+	width: 350px;
+	height: 400px;
+
+	background-color: rgba(255, 255, 255, 0.9);
+}

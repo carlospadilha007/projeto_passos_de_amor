@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Titulo </title>
+		<meta name="author" content="Nathan">
+		<meta name="keywords" content="crianças, adoção">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="javascript/script.js"></script>
+	</head>
+	<body>
+		<div id="interface">
+			
+			<!-- ### Barra de Navegação ### -->
+			<header>
+				<nav>
+					<ol>
+						<li id="item"><img src="imagens/logo.jpg"> </li>
+						<li><a href=""> Notícias </a></li>
+						<li><a href=""> Dúvidas </a></li>
+						<li><a href=""> Quem Somos </a></li>
+					</ol>
+				</nav>
+			</header>
+
+			<!-- ### Cabecalho ### -->
+			
+			<!-- Slider -->
+			<section id="slider" onmouseover="parar()" onmouseout="iniciaSlider()">
+
+				<input type="button" value="<" id="btn1" onclick="troca(-1)">
+				<input type="button" value=">" id="btn2" onclick="troca(1)">
+				
+			</section>
+
+			<!-- ### Conteudo ### -->
+
+			<!-- aulas -->
+			<section id="aulas">
+				
+
+				<div class="texto">
+					<p> Toda criança merece um novo começo. </p>
+				</div>
+
+				<div class="imagem">
+					<img src="imagens/familia.png">
+				</div>
+			</section>
+
+			<!-- plataformas -->
+			<section id="plataformas">
+				<div>
+					<img src="imagens/coracao.png">
+					<br>
+					<p> texto </p>
+				</div>
+
+				<div>
+					<img src="imagens/mulher.png">
+					<br>
+					<p> texto </p>
+				</div>
+
+				<div>
+					<img src="imagens/casa.png">
+					<br>
+					<p> texto </p>
+				</div>
+			</section>
+
+			<!-- eventos -->
+			<section id="eventos">
+				<p class="texto"> Texto </p>
+			</section>
+
+			<!-- ### Rodapé ### -->
+			<footer>
+				<ol>
+					<li id="rodape_logo">
+						<img src="imagens/pegada.png">
+					</li>
+
+					<li>
+						<h3> Quem Somos </h3>
+					</li>
+
+					<li>
+						<h3> Notícias </h3>
+						<ol class="itens">
+							<li>
+								<a href=""> texto </a>
+							</li>
+							<li>
+								<a href=""> texto </a>
+							</li>
+							<li>
+								<a href=""> texto </a>
+							</li>
+						</ol>
+					</li>
+
+					<li>
+						<h3> Dúvidas </h3>
+						<ol class="itens">
+							<li>
+								<a href=""> texto </a>
+							</li>
+							<li>
+								<a href=""> texto </a>
+							</li>
+							<li>
+								<a href=""> texto </a>
+							</li>
+						</ol>
+					</li>
+
+					<li id="rodape_social">
+						<ul>
+							<li><a href=""> <img src="imagens/facebook.png"> </a></li>
+							<li><a href=""> <img src="imagens/instagram.png"> </a></li>
+							<li><a href=""> <img src="imagens/twitter.png"> </a></li>
+						</ul>	
+					</li>
+				</ol>
+			</footer>
+
+		</div>
+	</body>
+</html>
