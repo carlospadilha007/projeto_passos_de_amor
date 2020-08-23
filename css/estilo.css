@@ -3,9 +3,11 @@
 
 * {
 	margin: 0px;
+	padding: 0px;
 }
 
 body {
+	width: 1366px;
 	background-color: white;
 }
 
@@ -21,14 +23,20 @@ section#paginaInicial {
 
 /* #### Barra de navegacao #### */
 
+div#interface{
+	width: 1366px;
+	margin: 0;
+	padding: 0;
+}
+
 header {
 	background-color: rgba(255, 255, 255, 1);
 	color: pink;
 	font-size: 13pt;
-	width: 100%;
+	width: 1366px;
 	height: 80px;
 	box-sizing: border-box;
-	position: fixed;
+	position: absolute;
 	/*display: flex;*/
 	top: 0px;
 	padding: 30px;
@@ -62,8 +70,11 @@ header nav ol li#item {
 }
 
 header nav ol li#item img {
-	width: 150px;
-	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 80px;
+	height: 80px;
 }
 
 header nav ol li a {
@@ -96,7 +107,7 @@ section#slider {
 	width: 100%;
 	height: 550px;
 	margin-top: 80px;
-	background-size: 1400px 550px;
+	background-size: 1366px 550px;
 }
 
 section#slider input#btn1 {
@@ -130,7 +141,7 @@ div#aulas section#cabecalho {
 	height: 550px;
 	margin-top: 60px;
 	background: url(../imagens/aulas.jpg);
-	background-size: 1400px 550px;
+	background-size: 1366px 550px;
 }
 
 div#aulas section#cabecalho section#texto_cabecalho {
@@ -149,7 +160,7 @@ div#plataformas section#cabecalho {
 	height: 550px;
 	margin-top: 60px;
 	background: url(../imagens/plataformas.jpg);
-	background-size: 1400px 550px;
+	background-size: 1366px 550px;
 }
 
 div#eventos section#cabecalho {
@@ -157,158 +168,22 @@ div#eventos section#cabecalho {
 	height: 550px;
 	margin-top: 60px;
 	background: url(../imagens/eventos.jpg);
-	background-size: 1400px 550px;
+	background-size: 1366px 550px;
 }
 
-
-
-
-/* ### Conteudo ### */
-section#paginaConteudo {
-	width: 100%;
-	height: 600px;
-	box-sizing: border-box;
-	padding: 0px 80px;
-	background-color: rgb(220,220,220);
-}
-
-section#paginaConteudo div#conteudo {
-	width: 100%;
-	height: 100%;
-	background-color: white;
-}
-
-
-/* ---- aulas ---- */
-section#aulas {
-	height: 400px;
-	display: flex;
-	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 50px;
-	color: black;
-	background-color: white;
-}
-
-section#aulas div.imagem {
-	margin-top: 30px;
-	margin-left: -70px;
-}
-
-section#aulas div.imagem img {
-	width: 250px;
-	height: 250px;
-}
-
-section#aulas div.texto {
-	margin-top: 140px;
-	padding-left: 20px;
-}
-
-section#aulas div.texto p {
-	color: rgba(255, 20, 147, 0.8);
-	font-weight: bold;
-	font-size: 16pt;
-}
-
-section#aulasPrincipal {
-	width: 100%;
-	height: 700px;
-	box-sizing: border-box;
-	padding: 60px;
-	background-color: white;
-}
-
-section#paginaConteudo div.aulasConteudo {
-	width: 100%;
-	height: 300px;
-	display: flex;
-	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 40px 25px;
-	background-color: white;
-}
-
-section#paginaConteudo div.aulasConteudo div img {
-	width: 150px;
-	height: 150px;
-	border-radius: 75px;
-}
-
-
-/* ---- plataformas ---- */
-section#plataformas {
-	height: 400px;
-	display: flex;
-	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 50px;
-	padding-top: 80px;
-	/* background: linear-gradient(to top ,rgba(135,206,235), white); */
-	background-color: rgba(0, 0, 0, 0.05);
-}
-
-section#plataformas div img {
-	width: 150px;
-	height: 150px;
-	 /* border-radius: 75px; */
-}
-
-section#plataformas div p {
-	padding: 10px;
-	text-align: center;
-}
-
-section#paginaConteudo div.plataformasConteudo {
-	width: 100%;
-	height: 300px;
-	display: flex;
-	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 40px 25px;
-	background-color: white;
-}
-
-section#paginaConteudo div.plataformasConteudo div {
-	display: flex;
-	justify-content: space-around;
-	padding: 0px 15px;
-
-}
-
-section#paginaConteudo div.plataformasConteudo div img {
-	width: 75%;
-	height: 100%;
-}
-
-section#paginaConteudo div.plataformasConteudo div img:hover {
-	filter: blur(2px);
-}
-
-
-/* ---- eventos ---- */
-section#eventos {
-	height: 400px;
-	display: flex;
-	justify-content: center;
-	background-image: url('../imagens/roda.jpg');
-	background-size: 1400px 400px;
-	box-sizing: border-box;
-	padding: 50px;
-}
-
-section#eventos p.texto {
-	color: white;
-}
 
 
 /* #### Rodapé #### */
 
 footer {
+	clear: both;
+	margin: 0;
 	background-color: rgba(255, 20, 147, 0.7);
-	width: 100%;
+	width: 1366px;
 	height: 300px;
 	box-sizing: border-box;
+	margin-bottom: 0;
+	bottom: 0;
 	padding: 50px;
 }
 
